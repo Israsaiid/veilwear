@@ -5,25 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VEILWEAR</title>
 
-
     <!-- CSS-filer -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=search">
+
+    <!-- Kommentar: Splash screen kan aktiveras om den behövs -->
 </head>
 <body>
 
-    <div id="splash-screen">
-        <div class="splash-content">
-            <h1>VEILWEAR</h1>
-        </div>
-    </div>
-    
     <!-- <h1>Free shipping for orders above 3 scarves!</h1> -->
     <!-- Navigationsfält -->
-    <nav class="navbar" style="height: 80px; padding: 20px 0;">
+    <nav class="navbar">
         <!-- Titel -->
-        <div class="title" onclick="window.location.href='index.html';">VEILWEAR</div>
+        <div class="title">VEILWEAR</div>
         <!-- Menyknapp -->
         <div class="menu-bar" onclick="showSidebar()">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#161616">
@@ -32,31 +27,46 @@
         </div>
 
         <!-- Sökfält -->
-        <!-- <div class="search-container">
-            <input type="text" id="search-input" placeholder="What are you looking for?" />
-            <button id="search-btn">Search</button>
-            <div id="search-overlay" class="hidden">
-              <div class="search-overlay-content">
-                <input type="text" placeholder="What are you looking for?" />
-                <button id="close-btn">X</button>
-              </div>
-            </div>
-          </div> -->
-          
+        <div class="search-bar">
+        <input class="search-input" type="search" placeholder="Search">
+        <button class="search-submit" onclick="searchPrompt()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        </div>
 
     </nav>
 
-    <!-- <div id="slider">
-        <figure>
-            <img src="images/IMG_6342.jpg" height="700px">
-            <img src="images/IMG_6341.jpg">
-        </figure>
-    </div> -->
-    <section class="wrapper-main">
-        <video src="video/Min film.mp4" autoplay loop muted></video>
-    </section>    
-    
-    
+     <!-- Main Content -->
+     <div class="content about-us">
+        <h1>About Us</h1>
+        <p>Welcome to <strong>VEILWEAR</strong>, where fashion meets tradition. 🌟</p>
+        <p>We are dedicated to bringing you elegant and high-quality scarves and accessories that celebrate diversity, culture, and style. Founded with a passion for blending modern trends with timeless designs, VEILWEAR is more than just a shop—it’s a community.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to empower individuals to express themselves confidently through fashion while staying true to their values. 🌍✨</p>
+
+        <h2>Why Choose VEILWEAR?</h2>
+        <ul>
+            <li>🧣 **Premium Quality**: Handpicked fabrics for comfort and durability.</li>
+            <li>🎨 **Stylish Designs**: A collection inspired by cultures around the world.</li>
+            <li>🤝 **Customer Commitment**: Your satisfaction is our priority.</li>
+        </ul>
+
+        <h2>Join Our Journey</h2>
+        <p>We believe in creating meaningful connections. Follow us on social media and share your stories with us using #VEILWEAR.</p>
+
+        <p>Thank you for being part of our story! 💖</p>
+
+        <h2>Follow us on our social medias</h2>
+        <p>Follow us on instagram and on tiktok</p>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 VEILWEAR. All Rights Reserved.</p>
+    </footer>
+
     <!-- Sidomeny -->
     <div class="sidebar">
         <ul>
@@ -77,17 +87,14 @@
         </ul>
     </div>
 
+    <!-- Huvudinnehåll -->
+    <section class="wrapper-main">
+        <!-- Här kan du lägga till din video eller andra element -->
+    </section>
 
     <!-- Annat innehåll -->
     <div class="content">
         <!-- Lägg till innehåll här -->
-    </div>
-
-    <div class="image-grid">
-        <img src="images/sjal-bilder/IMG_6341.jpg" style="width: 400px; height: 500px;">
-        <img src="images/sjal-bilder/IMG_6342.jpg" style="width: 400px; height: 500px;">
-        <!-- <img src="bild3.jpg">
-        <img src="bild4.jpg"> -->
     </div>
 
     <!-- JavaScript -->

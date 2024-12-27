@@ -31,3 +31,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const splashScreen = document.querySelector('.splash-screen');
     splashScreen.classList.add('show'); // Reveal the splash screen immediately
 });
+
+// Hämta knappen och sökrutan
+const searchBtn = document.getElementById("search-btn");
+const searchBar = document.getElementById("search-bar");
+
+// Lägg till klickhändelse
+searchBtn.addEventListener("click", () => {
+  if (searchBar.classList.contains("hidden")) {
+    searchBar.classList.remove("hidden");
+    searchBar.classList.add("visible");
+  } else {
+    searchBar.classList.remove("visible");
+    searchBar.classList.add("hidden");
+  }
+});
